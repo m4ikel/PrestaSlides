@@ -1,0 +1,22 @@
+<div id="slides" class="container">
+	<!--
+	<button ng-click="addSlide()">AddSlide</button>
+	<button ng-click="removeSlide()">RemoveSlide</button>
+	-->
+	<div class="screen">
+		<a class="navigate left" ng-href="#/project/{{guid}}/slides/{{prevSlide}}"><i class="fa fa-arrow-left fa-8"></i></a>
+		<div class="wrapper">
+			<div class="slide" data-slide-id="{{slide}}">
+				<div class="jumbotron" ng-style="{'background-color': color}">
+					<div ng-bind-html="trustAsHtml(html)"></div>
+				</div>
+			</div>
+			<ul class="slidenav nav nav-pills nav-justified">
+				<li class="left" role="presentation"><a class="btn btn-lg btn-default" ng-href="#/project/{{guid}}/slides/{{slide}}/edit">Edit slide</a></li>				
+				<li class="center" role="presentation"><a class="btn btn-lg btn-default" ng-href="" ngsf-toggle-fullscreen>Fullscreen</a></li>
+				<li class="right" role="presentation"><a class="btn btn-lg btn-default" ng-href="#/project/{{guid}}/save">Download</a></li>
+			</ul>
+		</div>
+		<a class="navigate right" ng-href="#/project/{{guid}}/slides/{{nextSlide}}"><i class="fa fa-arrow-right fa-8"></i></a>
+	</div>
+</div>

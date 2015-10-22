@@ -1,0 +1,21 @@
+<div id="project" class="container">
+	<div class="jumbotron">
+		<qrcode data="{{url}}" class="pull-right"></qrcode>
+		<h1><i class="fa fa-tv"></i> {{name}}</h1>
+		<div class="row">
+			<div class="col-md-4">
+				<h2>Preview</h2>
+				<div class="preview">
+					{{preview}}
+				</div>
+			</div>
+			<div class="col-md-8">
+				<h2>Description</h2>
+				<p class="text">{{description}}</p>
+				<p>
+					<a ng-href="#/project/{{guid}}/slides/0" class="btn btn-lg btn-primary">Start presentation</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>

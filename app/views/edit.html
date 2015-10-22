@@ -1,0 +1,20 @@
+<div id="slides" class="container">
+	<div class="screen">
+		<a class="navigate left" ng-href="#/project/{{guid}}/slides/{{prevSlide}}/edit"><i class="fa fa-arrow-left fa-8"></i></a>
+		<div class="wrapper">
+			<form ng-submit="submit()">
+				<div class="slide" data-slide-id="{{slide}}">
+					<div class="jumbotron" ng-style="{'background-color': color}">
+						<button class="btn btn-lg btn-default paint" colorpicker type="button" colorpicker-position="left" ng-model="color" name="color"><i class="fa fa-paint-brush"></i></button>
+						<div ui-tinymce="tinymceOptions" ng-model="html" class="editable"></div>
+					</div>
+				</div>
+				<ul class="slidenav nav nav-pills nav-justified">
+					<li class="left" role="presentation"><button class="btn btn-lg btn-success" type="submit" ng-href="#/project/{{guid}}/slides/{{prevSlide}}">Save</button></li>
+					<li class="right" role="presentation"><a class="btn btn-lg btn-danger" ng-href="#/project/{{guid}}/slides/{{prevSlide}}">Cancel</a></li>
+				</ul>
+			</form>
+		</div>
+		<a class="navigate right" ng-href="#/project/{{guid}}/slides/{{nextSlide}}/edit"><i class="fa fa-arrow-right fa-8"></i></a>
+	</div>
+</div>
