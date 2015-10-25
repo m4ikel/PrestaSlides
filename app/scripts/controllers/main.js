@@ -8,10 +8,5 @@
  * Controller of the blendleSlidesApp
  */
 angular.module('blendleSlidesApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+  .controller('MainCtrl', function (){
+});

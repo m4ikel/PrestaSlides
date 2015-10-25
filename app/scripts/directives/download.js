@@ -8,7 +8,7 @@ angular.module('blendleSlidesApp')
         link:function (scope, elm, attrs) {
             var url = URL.createObjectURL(scope.getUrlData());
             elm.append($compile(
-                '<a class="btn btn-lg btn-default" download="presentation.json"' +
+                '<a class="btn btn-lg btn-primary" download="presentation.json"' +
                     'href="' + url + '">' +
                     'Download' +
                     '</a>'

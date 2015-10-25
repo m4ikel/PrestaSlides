@@ -1,21 +1,14 @@
-<div id="slides" class="container">
-	<!--
-	<button ng-click="addSlide()">AddSlide</button>
-	<button ng-click="removeSlide()">RemoveSlide</button>
-	-->
-	<div class="screen">
-		<a class="navigate left" ng-href="#/project/{{guid}}/slides/{{prevSlide}}"><i class="fa fa-arrow-left fa-8"></i></a>
-		<div class="wrapper">
-			<div class="slide" data-slide-id="{{slide}}">
-				<div class="jumbotron">
-					
-				</div>
-			</div>
-			<ul class="slidenav nav nav-pills nav-justified">
-				<li class="left" role="presentation"><a class="btn btn-lg btn-default" ng-href="#/project/{{guid}}/slides/{{slide}}/edit">Edit slide</a></li>
-				<li role="presentation"><my-download id="content" get-data="getBlob()" /></li> 
-			</ul>
+<div id="save" class="container">
+	<div class="wrapper">
+		<div class="jumbotron">
+			<h1><i class="fa fa-plus"></i> Save project</h1>
+			<p class="text">
+				 Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. 
+			</p>
+			<my-download id="content" get-data="getBlob()" /> 
 		</div>
-		<a class="navigate right" ng-href="#/project/{{guid}}/slides/{{nextSlide}}"><i class="fa fa-arrow-right fa-8"></i></a>
+		<ul class="slidenav nav nav-pills nav-justified">
+			<li class="center" role="presentation"><a class="btn btn-lg btn-default" ng-href="#/project/{{guid}}">View project</a></li>
+		</ul>
 	</div>
 </div>
