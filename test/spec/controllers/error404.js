@@ -17,7 +17,7 @@ describe('Controller: error404Ctrl', function () {
     });
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(error404Ctrl.awesomeThings.length).toBe(3);
+  it('Should be defined', function () {
+    expect(error404Ctrl).toBeDefined(true);
   });
 });

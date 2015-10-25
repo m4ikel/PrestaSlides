@@ -12,12 +12,21 @@ describe('Controller: EditCtrl', function () {
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
     EditCtrl = $controller('EditCtrl', {
-      $scope: scope
-      // place here mocked dependencies
+		$scope: scope
     });
+	
+	// Define GUID (should be inside URI)
+	scope.guid = '1234567890123456';
   }));
-
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(EditCtrl.awesomeThings.length).toBe(3);
+  
+  it('Should be defined', function () {
+    expect(EditCtrl).toBeDefined(true);
   });
+
+  it('Should attach a GUID to the scope containing 16 chars', function () {
+	expect(scope).toBeDefined();
+	expect(scope.guid).toBeDefined();
+	expect(scope.guid.length).toBe(16);
+  });
+  
 });
